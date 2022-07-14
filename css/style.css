@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.2;
+}
+
+main {
+    max-width: 1440px;
+    margin: 0 auto;
+    height: 100vh;
+    background-color: hsl(30, 38%, 92%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.card-component {
+    display: flex;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 15px;
+}
+
+.card-image {
+    background: url(../images/image-product-desktop.jpg) center/cover no-repeat;
+    width: 400px;
+    height: 500px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    
+}
+
+.card-description {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 50px;
+    width: 325px;
+}
+
+.card-description h1 {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 14px;
+    color: hsl(228, 12%, 48%);
+}
+
+.card-description h2 {
+    font-size: 30px;
+}
+
+.description-content {
+    font-size: 14px;
+    color:hsl(228, 12%, 48%);
+    line-height: 1.5;
+}
+
+.price {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.new-price {
+    font-size: 30px;
+    color: hsl(158, 36%, 37%);
+    font-weight: 700;
+}
+
+.old-price {
+    color:hsl(228, 12%, 48%);
+    text-decoration: line-through;
+}
+
+.purchase-btn {
+    cursor: pointer;
+    outline: none;
+    padding: 6px 12px;
+    font-size: 14px;
+    color: hsl(0, 0%, 100%);
+    font-weight: 700;
+    background-color: hsl(158, 36%, 37%);
+    border: none;
+    margin-top: 10px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    height: 45px;
+    box-shadow: 0 3px rgba(0,0,0,0.3);
+}
+
+.icon-cart {
+    width: 20px;
+    height: 20px;
+    background: url('../images/icon-cart.svg') center/cover no-repeat;
+}
+
+.purchase-btn:hover {
+    filter:brightness(110%);
+}
+
+.purchase-btn:active {
+    transform: translateY(3px);
+    box-shadow: none;
+}
+
+footer {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
